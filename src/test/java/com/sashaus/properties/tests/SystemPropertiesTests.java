@@ -3,6 +3,8 @@ package com.sashaus.properties.tests;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
+import static java.lang.String.format;
+
 public class SystemPropertiesTests {
 
     @Test
@@ -26,7 +28,7 @@ public class SystemPropertiesTests {
     }
 
     @Test
-    void systemPropertiesTest3() {
+    void systemProperties3Test() {
         System.setProperty("browser", "chrome");
         String browser = System.getProperty("browser", "mozilla");
 
