@@ -3,8 +3,6 @@ package com.sashaus.properties.tests;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
-import static java.lang.String.format;
-
 public class SystemPropertiesTests {
 
     @Test
