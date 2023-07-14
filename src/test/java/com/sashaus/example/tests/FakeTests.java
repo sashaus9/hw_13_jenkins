@@ -1,4 +1,4 @@
-package com.sashaus.tests;
+package com.sashaus.example.tests;
 
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;

@@ -1,4 +1,4 @@
-package com.sashaus.tests;
+package com.sashaus.example.tests;
 
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.logevents.SelenideLogger;

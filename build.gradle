@@ -46,6 +46,17 @@ dependencies {
     testRuntimeOnly('org.junit.jupiter:junit-jupiter-engine:5.9.0')
 }
 
+tasks.withType(Test) {
+    systemProperties(System.getProperties())
+
+    testLogging {
+        lifecycle {
+            events "started", "skipped", "failed", "standard_error", "standard_out"
+            exceptionFormat "short"
+        }
+    }
+}
+
 test {
     useJUnitPlatform()
 }
@@ -59,5 +70,11 @@ task remote_test(type: Test) {
 task fake_test(type: Test) {
     useJUnitPlatform {
         includeTags("fake")
+    }
+}
+
+task property_test(type: Test) {
+    useJUnitPlatform {
+        includeTags("property")
     }
 }

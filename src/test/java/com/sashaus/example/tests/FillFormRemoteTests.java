@@ -1,4 +1,4 @@
-package com.sashaus.tests;
+package com.sashaus.example.tests;
 
 import com.sashaus.utils.TestDataGenerator;
 import io.qameta.allure.Allure;
