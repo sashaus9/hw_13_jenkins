@@ -51,7 +51,6 @@ public class FillFormRemoteTests extends RemoteBaseTest {
 
         step("Check submit results", () ->
                 automationPracticeFormPage.checkThatRegistrationResultsBlockAppears()
-                        .checkResultValues(resultValues)
-                        .closeResultModalWindow());
+                        .checkResultValues(resultValues));
     }
 }
